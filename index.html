@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        #game {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Guess The Perfect Number </h1>
+        <div id="game">
+            <p>Guess a number between 1 and 100:</p>
+            <div class="search">
+                <input type="number" placeholder="Enter The Number" id="guess" min="1" max="100">
+                <p></p>
+                <button onclick="checkGuess()">
+                    <center><img src="submit.jpeg" alt=""></center>
+                </button>
+            </div>
+            <p id="result"></p>
+        </div>
+        <audio id="button-sound">
+            <source src="success-fanfare-trumpets-6185.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="btn-sound">
+            <source src="beep-6-96243.mp3" type="audio/mp3">
+        </audio>
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
